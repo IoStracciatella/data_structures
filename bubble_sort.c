@@ -1,5 +1,3 @@
-// Baoijfisada
-
 #include <stdio.h>
 
 int main () {
