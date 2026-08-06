@@ -1,0 +1,42 @@
+1. Alternativa d)
+Justificativa:
+Temos no exercício um código que troca o valor no endereço de dois ponteiros utilizando uma variável auxiliar. Logo, se os valores iniciais eram 10, 20, agora serão trocados para 20, 10
+
+2. Alternativa a)
+Justificativa:
+Para acessar o valor no edereço de um ponteiro, utilizamos o símbolo de asterisco antes do nome do ponteiro 
+
+3. Alternaticas b) e d)
+Justificativa:
+a) falsa pois o valor de num não é igual ao endereço de pnum
+b) verdadeira pois o valor de num é o valor apontado por pnum
+c) falsa pois o endereço em pnum != *num
+d) verdadeira pois o endereço apontado por pnum é o endereço de num
+e) falsa pois o endereço de num não pe igual ao seu valor
+
+4. Alternativa c)
+Justificativa:
+a) falsa pois a variável pont é do tipo ponteiro
+b) falsa pois o endereço de pont é um valor do tipo int
+
+5. Alternativa e)
+Justificativa:
+O valor armazenado em pti é um endereço para i, não o valor 10
+
+6. Alternativa b)
+Justificativa:
+O ponteiro temp primeiro armazena o endereço de cont, e depois, o valor de cont é modificado através do ponteiro para o valor 20. Depois, o ponteiro temp passa a armazenar o endereço de sum, e o valor de cont é atribuído a sum, sendo que o valor de cont atribuído anteriormente era 20. Logo sum = 20
+
+7. Alternativa b)
+Justificativa:
+No código original, na função printf(), estava sendo impresso o valor no endereço de q, e não o valor apontado por q. Como queremos imprimir um valor apontado por um ponteiro de ponteiro, usamos **
+
+8. Alternativa a) 
+Justificativa:
+Efetuamos a leitura de f, pois o enderço de f está armazenado em pf, e passamos pf como argumento na função scanf
+
+9. Alternativa b)
+Justificativa:
+Testei e foi esse que deu errado
+
+10. 
