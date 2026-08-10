@@ -35,3 +35,28 @@ int main() {
 
     return 0;
 }
+
+5.
+#include <stdio.h>
+
+int main() {
+    int i, soma = 0, elementos = 0, numeros[15];
+    
+    for (i = 0; i < 15; i++) {
+        scanf("%d", &numeros[i]);
+    }
+    
+    for (i = 0; i < 15; i++) {
+        if (i % 2 == 0) {
+            printf("%d", numeros[i]);
+            soma += numeros[i];
+            elementos++;
+        }
+    }
+    
+    soma = soma / elementos;
+    
+    printf("Média: %d", soma);
+
+    return 0;
+}
