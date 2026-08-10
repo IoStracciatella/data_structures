@@ -61,3 +61,45 @@ int main() {
 
     return 0;
 }
+
+6.
+#include <stdio.h>
+
+int main() {
+    int i, maior_alt = 0, menor_alt, soma, qtde_n_fum = 0, qtde_fum = 0, media, altura[10], fumante[10];
+    
+    for (i = 0; i < 10; i++) {
+        printf("Insira a altura (em cm) e se eh fumante (0 = nao 1 = sim):\n");
+        scanf("%d %d", &altura[i], &fumante[i]);
+        
+        if (fumante[i] < 0 || fumante[i] > 1 || altura[i] <= 0) {
+            printf("Insira um valor valido");
+            return 1;
+        }
+        
+        if (maior_alt < altura[i]) {
+            maior_alt = altura[i];
+        }
+        
+        if (fumante[i] == 0) {
+            soma += altura[i];
+            qtde_n_fum++;
+        }
+    }
+    
+    menor_alt = altura[0];
+    
+    for (i = 0; i < 10; i++) {
+        if (menor_alt > altura[i]) {
+            menor_alt = altura[i];
+        }
+    }
+    
+    media = soma/qtde_n_fum;
+    
+    qtde_fum = 10 - qtde_n_fum;
+    
+    printf("Maior altura: %d\nMenor altura: %d\nMedia nao fumantes: %d\nQuantidade de fumantes: %d", maior_alt, menor_alt, media, qtde_fum);
+
+    return 0;
+}
