@@ -41,6 +41,7 @@ int main() {
 
 int main() {
     int i, soma = 0, elementos = 0, numeros[15];
+    float media;
     
     for (i = 0; i < 15; i++) {
         scanf("%d", &numeros[i]);
@@ -54,9 +55,9 @@ int main() {
         }
     }
     
-    soma = soma / elementos;
+    media = (float) soma / (float) elementos;
     
-    printf("Média: %d", soma);
+    printf("Média: %f", media);
 
     return 0;
 }
