@@ -1,7 +1,7 @@
 1. Na declaração do array b, no campo onde se insere o seu comprimento, um dos colchetes está escrito invertido
 Na declaração do array c, foi passado um valor do tipo float como comprimento, o que não é permitido, afinal, não é possível uma posição do array ter um valor decimal
 
-2. As expressões *p++ e (*p)++ são diferentes porque, a na primeira, incrementamos a posição do endereço do bloco de memória, e, na segunda, incrementamos o valor no bloco de memória. No caso do código que está no exercício, a saída é abc a = abc a = dbc, afinal, no segundo caso mudamos o valor da variável no bloco de memória
+2. As expressões *p++ e (*p)++ são diferentes porque, na primeira, incrementamos o ponteiro, fazendo-o apontar para a próxima posição de memória, e, na segunda, incrementamos o valor no bloco de memória. No caso do código que está no exercício, a saída é abc a = abc a = dbc, afinal, no segundo caso mudamos o valor da variável no bloco de memória
 
 3. 
 #include <stdio.h>
