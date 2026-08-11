@@ -58,3 +58,19 @@ int menor_elemento(int v[], int n)
 
     return menor;
 }
+
+5.
+double potencia_eficiente(double a, int b)
+{
+    double metade;
+
+    if (b == 0)
+        return 1;
+
+    metade = potencia_eficiente(a, b / 2);
+
+    if (b % 2 == 0)
+        return metade * metade;
+
+    return a * metade * metade;
+}
