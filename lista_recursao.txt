@@ -42,3 +42,19 @@ void imprime_binario(int n)
     imprime_binario(n / 2);
     printf("%d", n % 2);
 }
+
+4.
+int menor_elemento(int v[], int n)
+{
+    int menor;
+
+    if (n == 1)
+        return v[0];
+
+    menor = menor_elemento(v + 1, n - 1);
+
+    if (v[0] < menor)
+        return v[0];
+
+    return menor;
+}
