@@ -1,14 +1,15 @@
-1. 
+1.
 #include <stdio.h>
 
-void conta_tempo(int n) {
+void conta_tempo (int  n) {
+    printf("%d ", n);
+    n--;
+    
     if (n > 0) {
-        printf("%d ", n);
-
-        conta_tempo(n - 1);
-
-        printf("%d ", n);
+        conta_tempo(n);
     }
+
+    printf("%d ", n);
 }
 
 int main() {
