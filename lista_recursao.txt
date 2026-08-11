@@ -29,3 +29,16 @@ int soma_digitos(int n)
 
     return (n % 10) + soma_digitos(n / 10);
 }
+
+3.
+void imprime_binario(int n)
+{
+    if (n < 2)
+    {
+        printf("%d", n);
+        return;
+    }
+
+    imprime_binario(n / 2);
+    printf("%d", n % 2);
+}
